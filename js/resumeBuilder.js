@@ -97,12 +97,8 @@ bio.display = function() {
     var formattedMeg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedMeg);
     if (bio.skills.length > 0) {
+      $("#header").append(HTMLskillsStart);
       for (var skill=0; skill<bio.skills.length; skill++){
-          $("#header").append(HTMLskillsStart);
-          var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
-          $("#skills").append(formattedSkill);
-          var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
-          $("#skills").append(formattedSkill);
           var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
           $("#skills").append(formattedSkill);
       }
